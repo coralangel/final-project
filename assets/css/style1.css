@@ -14,10 +14,8 @@ body {
 }
 
 .footer-top{
-	
 	background-color: #1c3745;
 }
-
 
 a {
   color: #4fa6d5;
@@ -80,7 +78,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 }
 
 #header .logo h1 {
-  font-size: 35px;
+  font-size: 35px; // הכותרת הגדולה
 
   
 }
@@ -108,7 +106,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin: 0;
   padding: 0;
   list-style: none;
- 
 }
 
 .nav-menu > ul > li {
@@ -122,8 +119,8 @@ color: #ddecf5
   display: block;
   position: relative;
   color: #ddecf5;
-  padding: 10px 15px;
-  font-size: 14px;
+  padding: 10px 10px;
+  font-size: 15px;
   font-family: "Open Sans", sans-serif;
 }
 
@@ -137,14 +134,13 @@ color: #ddecf5
   position: absolute;
   left: 0;
  box-shadow: 0px 0px 30px rgba(127, 137, 161, 0.25);
-transition: ease all 0.3s;
+ transition: ease all 0.3s;
   background: #fff;
   top: calc(100% - 30px);
   z-index: 99;
   opacity: 0;
   visibility: hidden;
   padding: 10px 0;
-
 }
 
 .nav-menu .drop-down:hover > ul {
@@ -171,7 +167,7 @@ transition: ease all 0.3s;
 }
 
 
-	.nav-menu .drop-down > a:after {
+.nav-menu .drop-down > a:after {
   content: "\ea99";
   font-family: IcoFont;
   padding-left: 5px;
@@ -510,7 +506,7 @@ section {
 # Our Services
 --------------------------------------------------------------*/
 .services {
-  padding-bottom: 20px;
+  padding-bottom: 10px;
 }
 
 .services .icon-box {
@@ -542,7 +538,7 @@ section {
 
 .services .title {
   font-weight: 700;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   font-size: 18px;
 }
 
@@ -554,7 +550,13 @@ section {
   font-size: 15px;
   line-height: 28px;
   margin-bottom: 0;
+  text-align: center;
 }
+
+.services .icon-box-pink .description {
+  color:deeppink
+}
+
 
 .services .icon-box-pink .icon {
   background: #fceef3;
@@ -566,6 +568,10 @@ section {
 
 .services .icon-box-pink:hover {
   border-color: #ff689b;
+}
+
+.services .icon-box-cyan .description {
+  color:#3fcdc7
 }
 
 .services .icon-box-cyan .icon {
@@ -580,6 +586,10 @@ section {
   border-color: #3fcdc7;
 }
 
+.services .icon-box-green .description {
+  color:#41cf2e
+}
+
 .services .icon-box-green .icon {
   background: #eafde7;
 }
@@ -590,6 +600,10 @@ section {
 
 .services .icon-box-green:hover {
   border-color: #41cf2e;
+}
+
+.services .icon-box-blue .description {
+  color:#2282ff
 }
 
 .services .icon-box-blue .icon {
@@ -1003,6 +1017,7 @@ section {
 
 #footer .footer-top .footer-contact {
   margin-bottom: 30px;
+    
 }
 
 #footer .footer-top .footer-contact p {

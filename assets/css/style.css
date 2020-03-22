@@ -77,8 +77,6 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 
 #header .logo h1 {
   font-size: 35px;
-
-  
 }
 
 #header .logo h1 a, #header .logo h1 a:hover {
@@ -118,7 +116,7 @@ color: #ddecf5
   position: relative;
   color: #ddecf5;
   padding: 10px 15px;
-  font-size: 14px;
+  font-size: 30px;
   font-family: "Open Sans", sans-serif;
 }
 
