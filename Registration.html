@@ -1,6 +1,6 @@
 
 <!DOCTYPE html>
-<html lang="en">
+<html lang="he" dir="rtl">
 
 <head>
   <meta charset="utf-8">
@@ -27,7 +27,8 @@
 
   <!-- Template Main CSS File -->
   <link href="assets/css/style1.css" rel="stylesheet">
-
+  <link href="assets/css/base.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
 </head>
 
@@ -43,21 +44,25 @@
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
+    
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
-          <li class="active"><a href="index.html">Home</a></li>
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">חדשות</a></li>
+          <li><a href="contactUs.html">דברו איתנו</a></li>
+          <li><a href="aboutUs.html">מי אנחנו?</a></li>
           <li class="drop-down"><a href="">אזור אישי</a>
             <ul>     
-              <li><a href="#">פרופיל</a></li>
-              <li><a href="#">משחקים ששיחקתי</a></li>
+              <li><a href="#"> פרופיל</a></li>
+              <li><a href="#">היסטוריית המשחקים שלי</a></li>
               <li><a href="#">משחקים קרובים</a></li>
             </ul>
           </li>
-          <li><a href="#">Contact Us</a></li>
+ 
         </ul>
-      </nav><!-- .nav-menu -->
+      </nav> <!--- .nav-menu -->
+
+
+
+    
 
     </div>
   </header><!-- End Header -->
@@ -73,28 +78,28 @@
             <form action="action_page.php" method="post" id="formBox">
 
                 <label for="Username">שם משתמש</label><br>
-                <input type="text" id="regForm" name="Uname" placeholder="TheAmazingOr" required><br>
+                <input type="text" name="Uname" placeholder="TheAmazingOr" required><br>
                 <label for="Password">סיסמא</label><br>
-                <input type="text" id="regForm" name="Password" placeholder="*********" required><br>
+                <input type="text" name="Password" placeholder="*********" required><br>
                 <label for="Email">מייל</label><br>
-                <input type="text" id="regForm" name="Email" placeholder="orR@gmail.com" required><br>
+                <input type="text" name="Email" placeholder="orR@gmail.com" required><br>
                 <label for="fname">שם מלא</label><br>
-                <input type="text" id="regForm" name="fname" placeholder="אור"><br>
+                <input type="text" name="fname" placeholder="אור"><br>
                 <label for="age">גיל</label><br>
-                <input type="number" id="regForm" name="age" placeholder="27"><br>
+                <input type="number" name="age" placeholder="27"><br>
                 <label for="phoneN">מספר טלפון</label><br>
-                <input type="number" id="regForm" name="phoneN" placeholder="0546688624"><br><br>
+                <input type="number" name="phoneN" placeholder="0546688624"><br><br>
                 <h3> מין </h3>
-                <input type="radio" id="regForm" name="gender" value="male">
+                <input type="radio" name="gender" value="male">
                 <label for="male">גבר</label><br>
-                <input type="radio" id="regForm" name="gender" value="female">
+                <input type="radio" name="gender" value="female">
                 <label for="female">אישה</label><br>
                 <h3> רמת משחק </h3>
-                <input type="radio" id="regForm" name="level" value="amt">
+                <input type="radio" name="level" value="amt">
                 <label for="amt">חובבן</label><br>
-                <input type="radio" id="regForm" name="level" value="mid">
+                <input type="radio"  name="level" value="mid">
                 <label for="mid">בינוני</label><br>
-                <input type="radio" id="regForm" name="level" value="pro">
+                <input type="radio" name="level" value="pro">
                 <label for="pro">מקצוען</label><br>
 
                 <input type="reset" value="נקה טופס" id="submitA">
@@ -112,24 +117,15 @@
 
   <main id="main">
 
-
-
-	
-	
-
-
     <footer>
-      <div class="footer-top">
+      <div class="footer-top" id="down">
           <div class="container" style= margin-right: "100px";>
-         <div class="row" >
- 
-  
+          <div class="row" >
  
            <div class="col-lg-3 col-md-6 footer-contact">
-             <h4 style= text-align:center>Contact Us</h4>
+            <h4 style= text-align:center>Contact Us</h4>
             <p style= text-align:center>
-               המכללה האקדמית ת"א יפו <br>
-               ישראל <br><br>
+ 
                <strong>Phone:</strong> 0523437334<br>
                <strong>Email:</strong> akilovlian@gmail.com<br>
                  <br>
@@ -142,28 +138,26 @@
            </div>
  
            <div class="col-lg-3 col-md-6 footer-info">
-             <h3 style= text-align:center>find us</h3>
+             <h3 style= text-align:center>Find us</h3>
            
              <div class="social-links mt-3" style= text-align:center>
-               <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
-               <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
-               <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
-               <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+               <a href="#" class="fa fa-facebook"></a>
+               <a href="#" class="fa fa-twitter"></a>
+               <a href="#" class="fa fa-youtube"></a>
+               <a href="#" class="fa fa-instagram"></a>
              </div>
            </div>
-       
-       
          
-       <div class="col-lg-3 col-md-6 footer-contact">
-       <img src= "assets/img/cool3.jpg" >
-           </div>
+         <div class="col-lg-3 col-md-6 footer-contact">
+         <img src= "assets/img/cool3.jpg" id="footerLogo">
+         </div>
        
          </div>
      
      </div>
    </div>
  
-   </footer><!-- End Footer -->
+ </footer><!-- End Footer -->
 
   <a href="#" class="back-to-top"><i class="icofont-simple-up"></i></a>
 
@@ -181,6 +175,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+  
 
 </body>
 
