@@ -1,63 +1,35 @@
+/**
+* Template Name: Moderna - v2.0.1
+* Template URL: https://bootstrapmade.com/free-bootstrap-template-corporate-moderna/
+* Author: BootstrapMade.com
+* License: https://bootstrapmade.com/license/
+*/
 
 /*-------------------
-model login form- פופ אפ של התחברות או הרשמה
+model login form
 -------------------*/
-
 
 /* Full-width input fields */
 
-	#loginText {
-  width: 45%;
-  padding: 8px 8px;
-  margin: 5px 5px;
+#loginText {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
   display: inline-block;
   border: 1px solid #ccc;
   box-sizing: border-box;
 }
 
 
-#hrLogIn {
-  border: 1px solid #2E2E57;
-  margin-bottom: 25px;
-}
-
-#MyPageHeader{
-	padding:10px;
-	margin:20px;
-	margin-bottom:50px;
-	padding-right:20px;
-	font-size:35px;
-	color:#2E2E57;
-}
-
-
-.ImgBgLogIn{
-	opacity:0.5;	
-}
-
-
-.top-right {
-  position: absolute;
-  top: 8px;
-  right: 16px;
-  	padding:10px;
-	margin:20px;
-	margin-bottom:50px;
-	padding-right:20px;
-	font-size:35px;
-	
-}
-
 /* Set a style for all buttons */
-	#buttonLog {
+#buttonLog {
   background-color: #4CAF50;
   color: white;
-  padding: 8px 8px;
-  margin-bottom: 30px ;
-   margin-top: 30px;
+  padding: 14px 20px;
+  margin: 8px 0;
   border: none;
   cursor: pointer;
-  width: 20%;
+  width: 100%;
 }
 
 #buttonLog:hover {
@@ -65,109 +37,159 @@ model login form- פופ אפ של התחברות או הרשמה
 }
 
 
-#SignUp{
- position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: #2E2E57;
-  color: white;
-  margin-bottom: 30px ;
-   margin-top: 70px;
-  cursor: pointer;
+/* Extra styles for the cancel button */
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  margin-right: 4%;
+  background-color: #f44336;
 }
 
+/* Center the image and position the close button */
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+  position: relative;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+}
+
+.container {
+  padding: 16px;
+  text-align: right;
+
+}
 
 span.psw {
-  padding: 5px;
-  margin-left:50px;
-  margin-top:43px;
-  
+  float: right;
+  padding-top: 16px;
 }
 
 /* The Modal (background) */
 .modal {
- 
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
   overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
   padding-top: 60px;
   color:black;
-  padding-left:5px;
-  padding-right:5px;
+
 }
 
 /* Modal Content/Box */
 .modal-content {
   background-color: #fefefe;
-  margin: 2% auto 2% auto; /* 5% from the top, 15% from the bottom and centered */
-  border: 0.5px solid #888; 
+  margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+  border: 1px solid #888;
+  width: 50%; /* Could be more or less, depending on screen size */
 }
-
-
-.BoxEffect{
-	margin:10px;
-	width:80%;
-	padding:20px;	
-}
-
 
 /* The Close Button (x) */
 .close {
   position: absolute;
-  right: 10px;
+  right: 25px;
   top: 0;
   color: #000;
   font-size: 35px;
   font-weight: bold;
-  margin-bottom: 20px;
 }
 
+.close:hover,
+.close:focus {
+  color: red;
+  cursor: pointer;
+}
 
+/* Add Zoom Animation */
+.animate {
+  -webkit-animation: animatezoom 0.6s;
+  animation: animatezoom 0.6s
+}
+
+@-webkit-keyframes animatezoom {
+  from {-webkit-transform: scale(0)} 
+  to {-webkit-transform: scale(1)}
+}
+  
+@keyframes animatezoom {
+  from {transform: scale(0)} 
+  to {transform: scale(1)}
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+     
+  }
+}
 
 
 /*--------------------------------------------------------------
-# Registration -עמוד יצירת משתמש
+# General
 --------------------------------------------------------------*/
 
-//  שייך לעמוד פרופיל וגם לעמוד הרשמה
-.SendFormRdiv{
-	float:left;
-	padding-top:90px;	
+body {
+  font-family: "Open Sans", sans-serif;
+  color:black;
 }
 
-.RformBox{
-	box-shadow: 2px 2px 5px gray;
-	padding:30px;
+
+a {
+  color: #4fa6d5;
+}
+
+a:hover {
+  color: #45beff;
+  text-decoration: none;
+}
+
+
+.coolImg{
+	
+	size:60%;
 	
 }
 
-#formBox{
-	text-align: right;
-  margin-top:10%;
-}
-
-/*--------------------------------------------------------------
-# MyArea- מיותר צריך למחוק
---------------------------------------------------------------*/
-
-.MyAreaBox{
-	padding-right:250px;
-		
+h1, h2, h3, h4, h5, h6, .font-primary {
+  font-family: "Roboto", sans-serif;
 }
 
 
 
-/*--------------------------------------------------------------
-# Profile- עמוד פרופיל אישי
---------------------------------------------------------------*/
-
-.ProfileBox{
-	padding:5px;
-	border-bottom: 1px solid #554E76;
+#submitA {
+  border-radius: 4px;
+  background-color: #1c3745;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
 }
+
+#submitA:hover{
+
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+  
+}
+
 
 
 
@@ -177,7 +199,7 @@ span.psw {
 --------------------------------------------------------------*/
 #hero {
   width: 100%;
-  height: 700px;
+  height: 850px;
   overflow: hidden;
   position: relative;
 }
@@ -189,7 +211,7 @@ span.psw {
   top: 0;
   width: 130%;
   height: 95%;
-  background: linear-gradient(to right, rgba(230, 169, 128, 0.8), rgba(28, 55, 69, 0.2)), url("../img/volly2.jpg") center top no-repeat;
+  background: linear-gradient(to right, rgba(230, 169, 128, 0.8), rgba(28, 55, 69, 0.6)), url("../img/hero-bg.jpg") center top no-repeat;
   border-radius: 0 0 50% 50%;
 z-index: 0;
   transform: translateX(-50%) rotate(0deg);
@@ -247,7 +269,28 @@ z-index: 0;
   height: auto;
 }
 
+#hero .btn-get-started {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  -webkit-animation-delay: 0.8s;
+  animation-delay: 0.8s;
+  border: 2px solid #68A4C4;
+}
 
+#hero .btn-get-started:hover {
+  background: #68A4C4;
+  color: #fff;
+  text-decoration: none;
+}
 
 @media (min-width: 1024px) {
   #hero p {
@@ -297,7 +340,7 @@ z-index: 0;
 }
 
 /*--------------------------------------------------------------
-# Sections General- רלוונטי לכל סקשיין במערכת
+# Sections General
 --------------------------------------------------------------*/
 section {
   padding: 60px 0;
@@ -349,7 +392,7 @@ section {
 
 
 /*--------------------------------------------------------------
-# Our Services- הריבועים הצבעוניים
+# Our Services
 --------------------------------------------------------------*/
 .services {
   padding-bottom: 10px;
@@ -465,7 +508,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Why Us- שני סרטוני הוידאו בעמוד הבית
+# Why Us
 --------------------------------------------------------------*/
 .why-us .container {
   box-shadow: 0 5px 25px 0 rgba(214, 215, 216, 0.6);
@@ -628,7 +671,36 @@ section {
   }
 }
 
+/*--------------------------------------------------------------
+# Features
+--------------------------------------------------------------*/
+.features .row + .row {
+  margin-top: 100px;
+}
 
+.features h3 {
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.features ul {
+  list-style: none;
+  padding: 0;
+}
+
+.features ul li {
+  padding-bottom: 10px;
+}
+
+.features ul i {
+  font-size: 20px;
+  padding-right: 4px;
+  color: #68A4C4;
+}
+
+.features p:last-child {
+  margin-bottom: 0;
+}
 
 @media (max-width: 992px) {
   .pricing .box {

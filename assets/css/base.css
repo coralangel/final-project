@@ -1,6 +1,6 @@
 
 /*--------------------------------------------------------------
-# General- רלוונטי לרוב\כל הדפים
+# General רלוונטי לרוב\כל הדפים
 --------------------------------------------------------------*/
 
 body {
@@ -18,36 +18,65 @@ a:hover {
 }
 
 //למה זה שייך?
-.coolImg{
+.coolImg{	
 	size:60%;
 }
 
-// כל הכותרות בדפים
 h1, h2, h3, h4, h5, h6, .font-primary {
   font-family: "Roboto", sans-serif;
 }
 
+#submitA {
+  border-radius: 4px;
+  background-color: #1c3745;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 14px;
+  padding: 5px;
+  width: 100px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
 
-.bread{	
+#submitA:hover{
+
+  box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+.bread{
+	
 	padding:30px;
 }
 
-//לבדוק את זה
 .BigCoteret{
 	text-align:right;
-    border-bottom: double;
+	 border-bottom: double;
 	font-weight: bold;
 	opacity: 0.6;
 	font-family: "Open Sans", sans-serif;
 }
-
-.BoxEffect{
-	margin:10px;
-	width:80%;
-	padding:20px;
+.BoxEffect{	
+	margin-top:3px;	
+	padding:5px;
 }
 
-.close:hover, .close:focus {
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+     
+  }
+}
+
+.close:hover,
+.close:focus {
   color: red;
   cursor: pointer;
 }
@@ -75,6 +104,7 @@ h1, h2, h3, h4, h5, h6, .font-primary {
   margin-right: 50%;
 }
 
+
 .container {
   padding: 16px;
   text-align: right;
@@ -89,12 +119,13 @@ h1, h2, h3, h4, h5, h6, .font-primary {
 	 margin-top:0px;
 }
 
+
 input[type=text], input[type=password] {
   width: 100%;
   display: inline-block;
   border: none;
   background: #f1f1f1;
-  padding: 10px;
+  	padding: 10px;
   margin: 5px 0 10px 0;
 }
 
@@ -102,6 +133,7 @@ input[type=text]:focus, input[type=password]:focus {
   background-color: #ddd;
   outline: none;
 }
+
 
 .btn-get-started {
   font-family: "Roboto", sans-serif;
@@ -133,17 +165,14 @@ input[type=text]:focus, input[type=password]:focus {
   position:absolute;
 }
  
-  // פסים מסולסלים
- .contor-bg{
-	background: url("../img/dot3.png") top right no-repeat;
-	opacity:0.9;	
+ //פסים מסולסלים
+ .contor-bg{	
+	background: url("../img/dot3.png") top right no-repeat;	
 }
 
-.imageOpacity{	
+.imageOpacity{
 opacity:0.5;	
 }
-
-
 
 /*--------------------------------------------------------------
 # Footer
@@ -163,9 +192,9 @@ opacity:0.5;
     margin-top: 5%;
   }
   
-  /*----------------------
+  /*-----------------------------------------
   Social Media Buttons- כפתורים של רשתות חברתיות בפוטר
-  --------------------------*/
+  ----------------------------------------*/
   
   .fa {
     padding: 20px;
@@ -198,13 +227,10 @@ opacity:0.5;
 
 
 .containerFooter{
+	
   margin-left:auto;
   margin-right:auto;
 }
-
-
-
-
 /*--------------------------------------------------------------
 # Header
 --------------------------------------------------------------*/
@@ -213,6 +239,7 @@ opacity:0.5;
   padding: 4px;
   background: #1c3745;  
 }
+
 
 #header.header-scrolled {
   background: rgba(30, 67, 86, 0.8);
@@ -242,12 +269,14 @@ opacity:0.5;
 }
 
 
-.clear{
-  clear:both;
-}
 
+.clear{
+	clear:both;
+	
+}
 .introBotton{	
-  background-color: none;
+  
+    background-color: none;
   padding: 5px 10px;
   text-align: center;
   display: inline-block;
@@ -257,6 +286,8 @@ opacity:0.5;
   float: right;
 }
 
+
+
 .logOutBottton{
    text-align: center;
   text-decoration: bold;
@@ -264,7 +295,7 @@ opacity:0.5;
   font-size: 15px;
   color:white;	
   float: left;
-  margin:10px;
+  margin:10px;	
 }
 
 
@@ -293,11 +324,14 @@ opacity:0.5;
 }
 
 
+
 .img-fluid{
+	
 	margin-left:50px;
 	float:left;
-}
 
+	
+}
 .nav-menu > ul > li {
   position: relative;
   float: left;
@@ -362,12 +396,10 @@ color: #ddecf5
   font-family: IcoFont;
   padding-left: 5px;
 }
-
 .nav-menu .drop-down .drop-down ul {
   top: 0;
   left: calc(100% - 30px);
 }
-
 .nav-menu .drop-down .drop-down:hover > ul {
   opacity: 1;
   top: 0;
@@ -504,7 +536,8 @@ color: #ddecf5
  #footerLogo .mobile{ // צריך להבין למה התמונה בפוטר לא זזה ימינה כשמקטינים מסך
     width: 10%px;
     height: 200px;
-}
+  
+  }
 
 
 @media (max-width: 600px){// אופציה נוספת להזזת התמונה בפוטר ימינה כשאר המסך קטן
@@ -517,12 +550,15 @@ color: #ddecf5
     }
 }
 
-.centerFooterObject{	
+.centerFooterObject{
+	
 	padding-left:80px;
-	padding-right:200px;		
+	padding-right:200px;
+		
 }
 
-.LogoFoter{	
+.LogoFoter{
+	
 	right:100px;
 }
     
