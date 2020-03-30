@@ -29,7 +29,7 @@
 
 
   <!-- Template Main CSS File -->
-  <link href="assets/css/style1.css" rel="stylesheet">
+  <link href="assets/css/style2.css" rel="stylesheet">
   <link href="assets/css/base.css" rel="stylesheet">
   
 
@@ -41,84 +41,147 @@
 <body>
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top header-transparent">
+  
+
+
+                  <span onclick="document.getElementById('id01').style.display='block'" class="btn-get-started introBotton">כניסה\הרשמה></span>
+       
+
+        <div id="id01" class="modal">
+        
+        <form style= width:80% height:800px class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div  class="container">
+		<div class= "row">
+		
+		 <div class="col-lg-6">
+		 <p id= "MyPageHeader"> כניסה לאזור האישי</p>
+		 <hr id="hrLogIn"></hr>
+		 <div style= padding-right:30px class= "row">
+         <input  type="text" placeholder="שם משתמש" id="loginText"  name="uname" required></input>
+         <input  class= "BoxEffect" type="password" placeholder="סיסמא" id="loginText"  name="psw" required></input>
+        </div>
+		<div style= padding-right:30px class= "row">
+         <button class="btn-get-started" type="submit" id="buttonLog">התחבר</button>
+         <span class="psw ">שכחת <a href="#">סיסמא?</a> </span>
+		 <div class="clear"></div>
+        </div>
+		</div>
+        </form>
+		
+		
+		<div class="col-lg-6 LogInBigBox2">
+		
+		<img class="ImgBgLogIn" src="assets/img/LogInBg.jpg".jpg" alt="Snow" style="width:100%;">
+		<p class="top-right MyPageHeader"> חבר מועדון חדש? לחץ להצטרפות</p>
+		 <a  href="R.html" class="btn-get-started" id="SignUp"> להרשמה</a>
+		
+
+		 </div>
+		</div>
+		
+</div>
+</div>
+  
+	</div>
+	</div>
+	<span href= "helo.html" ><img style= width:13% src="assets/img/logoImg.jpg.png" alt="" class="img-fluid"></span>
     <div class="container">
-
-      <div class="logo float-left">
-        <h1 class="text-light"><a href="helo.html"><span>Team4Play</span></a></h1>
-        <!-- Uncomment below if you prefer to use an image logo -->
-        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
-      </div>
-
-    
       <nav class="nav-menu float-right d-none d-lg-block">
         <ul>
           <li><a href="contactUs.html">דברו איתנו</a></li>
           <li><a href="aboutUs.html">מי אנחנו?</a></li>
           <li class="drop-down"><a href="">אזור אישי</a>
             <ul>     
-              <li><a href="#"> פרופיל</a></li>
+              <li><a href="P.html"> פרופיל</a></li>
               <li><a href="#">היסטוריית המשחקים שלי</a></li>
               <li><a href="#">משחקים קרובים</a></li>
             </ul>
           </li>
- 
         </ul>
+		
+		 
+        
       </nav> <!--- .nav-menu -->
-    </div>
+	  
+	  
   </header><!-- End Header -->
 
   <!-- ======= Hero Section + model login form ======= -->
 
   <section id="hero" class="d-flex justify-cntent-center align-items-center">
   <div id="heroCarousel" class="container carousel carousel-fade" data-ride="carousel">
+ <!-- Slide 1 -->
+      <div class="carousel-item active">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">Welcome to <span>Team4Play</span></h2>
+          <p class="animated fadeInUp">לשחק עם חברים מעולם לא היה פשוט יותר!><br> 
+            צרו משחק בתאריך מיקום ורמת מיומנות המתאימה לכם ושאר החברים יצטרפו לבד, תקימו קבוצה ותהנו :)</p>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">חם מהשטח</h2>
+          <p class="animated fadeInUp"> בחוף גורדון הוקמו עוד 4 מגרשים לרווחת הציבור, איזה כיף לנו.</p>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="carousel-item">
+        <div class="carousel-container">
+          <h2 class="animated fadeInDown">מנצחים בטורנירים</h2>
+          <p class="animated fadeInUp">מלל של מנצחים בטורנירים</p>
+   
+        </div>
+      </div>
+
+      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon bx bx-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">הקודם</span>
+      </a>
+
+      <a class="carousel-control-next" href="#heroCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon bx bx-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">הבא</span>
+      </a>
 
     
-	<div class="carousel-item active">
-      <div class="carousel-container">
-         
-        <a href="Registration.html" class= "introBotton">הירשם</a>
-		  
+	
         
-        <button onclick="document.getElementById('id01').style.display='block'" class="introBotton">התחבר</button>
-
-        <div id="id01" class="modal">
-  
-        <form class="modal-content animate" action="/action_page.php" method="post">
-        <div class="imgcontainer">
-         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
-         <img src="assets/img/vollyVideo.jpg" alt="Avatar" class="avatar">
-        </div>
-
-        <div class="container">
-         <label for="uname"><b>שם משתמש</b></label>
-         <input type="text" id="loginText" placeholder="הכנס שם משתמש" name="uname" required>
-
-         <label for="psw"><b>סיסמא</b></label>
-         <input type="password" id="loginText" placeholder="הכנס סיסמא" name="psw" required>
-        
-         <button type="submit" id="buttonLog">התחבר</button>
-        </div>
-
-         <div class="container" style="background-color:#f1f1f1">
-         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">ביטול</button>
-         <span class="psw">שכחת <a href="#">סיסמא?</a> </span>
-        </div>
-
-        </form>
-       </div>
 		  
-      </div>
+		
   </div>
  </div> 
 </section><!-- End Hero -->
 
-  <main id="main">
+    <!-- ======= Why Us Section ======= -->
+    <section class="why-us section-bg" >
+      <div class="container">
 
+        <div class="row">
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+            <img src="assets/img/vollyVideo.jpg" class="img-fluid" alt="">
+            <a href="https://www.youtube.com/watch?v=sN_3QwQOwas" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+          </div>
+
+          <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+         <img src="assets/img/vollyVideo2.jpg" class="img-fluid" alt="">
+            <a href="https://https://www.youtube.com/watch?v=Hg7nCIDhiOg" class="venobox play-btn mb-4" data-vbtype="video" data-autoplay="true"></a>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+	
   
     <!-- ======= Features Section ======= -->
     
 <footer>
-     <div class="footer-top" id="down">
+     <div class="footer-top">
          <div class="container">
          <div class="row" >
 
@@ -147,14 +210,11 @@
               <a href="#" class="fa fa-instagram"></a>
             </div>
           </div>
-		    
-		    <div class="col-lg-3 col-md-6 footer-contact">
-		    <img src= "assets/img/cool3.jpg" id="footerLogo">
+		 
         </div>
-		  
-        </div>
-    
+
     </div>
+		
 	</div>
 
 </footer><!-- End Footer -->

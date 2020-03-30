@@ -34,37 +34,73 @@
       
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
       
-      
+   
+
       </head>
       
 
 <body>
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top header-transparent">
+  <header id="header"> <!--class="fixed-top header-transparent"-->
     <div class="container">
-
       <div class="logo float-left">
-        <h1 class="text-light"><a href="helo.html"><span>Team4Play</span></a></h1>
+        <h1 class="text-light"><a  href="sadnaS.html"><span>Team4Play</span></a></h1>
         <!-- Uncomment below if you prefer to use an image logo -->
         <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
       </div>
 
-    
-      <nav class="nav-menu float-right d-none d-lg-block">
-        <ul>
-          <li><a href="contactUs.html">דברו איתנו</a></li>
-          <li><a href="aboutUs.html">מי אנחנו?</a></li>
-          <li class="drop-down"><a href="">אזור אישי</a>
-            <ul>     
-              <li><a href="#"> פרופיל</a></li>
-              <li><a href="#">היסטוריית המשחקים שלי</a></li>
-              <li><a href="#">משחקים קרובים</a></li>
-            </ul>
-          </li>
- 
+         
+	<div class="carousel-item active">
+      <div class="carousel-container">
+         
+        <a href="Registration.html" class= "introBotton">הירשם</a>
+		  
+        <button onclick="document.getElementById('id01').style.display='block'" class="introBotton">התחבר</button>
+
+        <div id="id01" class="modal">
+  
+        <form class="modal-content animate" action="/action_page.php" method="post">
+        <div class="imgcontainer">
+         <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+         <img src="assets/img/vollyVideo.jpg" alt="Avatar" class="avatar">
+        </div>
+
+        <div class="container">
+         <label for="uname"><b>שם משתמש</b></label>
+         <input type="text" id="loginText" placeholder="הכנס שם משתמש" name="uname" required>
+
+         <label for="psw"><b>סיסמא</b></label>
+         <input type="password" id="loginText" placeholder="הכנס סיסמא" name="psw" required>
+        
+         <button type="submit" id="buttonLog">התחבר</button>
+        </div>
+
+         <div class="container" style="background-color:#f1f1f1">
+         <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">ביטול</button>
+         <span class="psw">שכחת <a href="#">סיסמא?</a> </span>
+        </div>
+
+        </form>
+       </div>
+		  
+      </div>
+  </div>
+        
+  <nav class="nav-menu float-right d-none d-lg-block">
+    <ul>
+      <li><a href="contactUs.html">דברו איתנו</a></li>
+      <li><a href="aboutUs.html">מי אנחנו?</a></li>
+      <li class="drop-down"><a href="">אזור אישי</a>
+        <ul>     
+          <li><a href="Profile.html"> פרופיל</a></li>
+          <li><a href="#">היסטוריית המשחקים שלי</a></li>
+          <li><a href="#">משחקים קרובים</a></li>
         </ul>
-      </nav> <!--- .nav-menu -->
+      </li>
+
+    </ul>
+  </nav> <!--- .nav-menu -->
     </div>
   </header><!-- End Header -->
 
@@ -120,7 +156,7 @@
                </div>
              </div>
                
-               <div class="col-lg-3 col-md-6 footer-contact">
+               <div class="col-lg-3 col-md-6 footer-contact" "mobile">
                <img src= "assets/img/cool3.jpg" id="footerLogo">
            </div>
              
